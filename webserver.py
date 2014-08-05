@@ -17,7 +17,7 @@ class MyHandler(BaseHTTPRequestHandler):
                 #f = open(curdir + sep + self.path) #self.path has /test.html
                 f = open(self.path) #self.path has /test.html
 #note that this potentially makes every file on your computer readable by the internet
-
+# This is a line that I added
                 self.send_response(200)
                 self.send_header('Content-type','text/html')
                 self.end_headers()
